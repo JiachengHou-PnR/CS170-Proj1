@@ -4,22 +4,20 @@
 #include <string>
 #include "node.hpp"
 
-class generalSearch {
-    public:
-        /* Constructors */
-        generalSearch() { };
+class generalSearch 
+{
+public:
+    /* Constructors */
+    generalSearch() { };
 
-        /* Pure Virtual Functions */
-        Puzzle getInitialState();
-        Puzzle getGoalState();
+    /* Pure Virtual Functions */
+    Puzzle getInitialState();
+    Puzzle getGoalState();
 
-        bool goalTest(Puzzle);
+    bool goalTest(Puzzle);
 
-    private:
-        std::list<Node *>* nodes;
-
-
-
+private:
+    std::list<Node *>* nodes;
 
 };
 

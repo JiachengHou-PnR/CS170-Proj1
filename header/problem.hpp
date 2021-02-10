@@ -4,28 +4,29 @@
 #include <string>
 #include "puzzle.hpp"
 
-class Problem {
-    public:
-        /* Constructors */
-        Problem() { };
+class Problem 
+{
+public:
+    /* Constructors */
+    Problem() { };
 
-        /* Pure Virtual Functions */
-        Puzzle getInitialState();
-        Puzzle getGoalState();
+    /* Pure Virtual Functions */
+    Puzzle getInitialState();
+    Puzzle getGoalState();
 
-        bool goalTest(Puzzle);
+    bool goalTest(Puzzle);
 
-        std::string actions(Puzzle* state);
+    std::string actions(Puzzle* state);
 
-        int actionCost(Puzzle* state, Puzzle* nextState);
+    int actionCost(Puzzle* state, Puzzle* nextState);
 
-        Puzzle* result(Puzzle* state, std::string action);
+    Puzzle* result(Puzzle* state, std::string action);
 
 
 
-    private:
-        Puzzle initalState;
-        Puzzle goalState;
+private:
+    Puzzle initalState;
+    Puzzle goalState;
 
 
 

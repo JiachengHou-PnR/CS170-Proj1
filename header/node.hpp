@@ -5,23 +5,23 @@
 #include "puzzle.hpp"
 
 
-class Node
+class Node 
 {
 public:
+
     Node();
     Node(Puzzle* state);
     Node(Puzzle* state, Node* parent, int cost);
 
     ~Node();
 
-    /* Functions Needed */
-    Node expand();
-
     int depth();
     int pathCost();
     Puzzle* state();
     Node* parent();
     std::list<Node *>* children();
+
+    Node expand();
 
 private:    
     /* Variables */
