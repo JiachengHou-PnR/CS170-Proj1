@@ -2,7 +2,6 @@
 #define __PUZZLE_HPP__
 
 #include <list>
-#include <stdexcept>
 
 class Puzzle
 {
@@ -15,19 +14,15 @@ public:
 
         ~Puzzle();
 
-        void set_sort_function(Sort* sort_function);
-
+        /* Basic Functions */
         void print();
-
-        /* Functions Needed to Sort */
-        
+        int length();
+        int height();
         int size();
 };
 
 #endif //__PUZZLE_HPP__
 
 // ---------- Citations ----------
-// This header structure is shared
-// with my previous coursework at
-// UC Riverside, CS100.
+// Header structure: Jiacheng Hou, coursework at UC Riverside, CS100.
 // -------------------------------

@@ -14,10 +14,14 @@ class Problem {
         Puzzle getGoalState();
 
         bool goalTest(Puzzle);
-        Ops 
+
+        std::string actions(Puzzle* state);
+
+        int actionCost(Puzzle* state, Puzzle* nextState);
+
+        Puzzle* result(Puzzle* state, std::string action);
 
 
-        virtual std::string stringify() = 0;
 
     private:
         Puzzle initalState;
@@ -29,3 +33,7 @@ class Problem {
 };
 
 #endif //__PROBLEM_HPP__
+
+// ---------- Citations ----------
+// Header structure: Jiacheng Hou, coursework at UC Riverside, CS100.
+// -------------------------------
