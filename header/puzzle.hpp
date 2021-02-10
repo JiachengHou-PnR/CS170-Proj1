@@ -25,3 +25,9 @@ public:
 };
 
 #endif //__PUZZLE_HPP__
+
+// ---------- Citations ----------
+// This header structure is shared
+// with my previous coursework at
+// UC Riverside, CS100.
+// -------------------------------
